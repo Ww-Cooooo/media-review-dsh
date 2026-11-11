@@ -1,0 +1,202 @@
+{
+  "checkedAt": "2026-11-11T06:19:52.360Z",
+  "plugin": "0.1.0-rc.6",
+  "carrier": "Installed final tgz in dedicated Windows / Harness 0.2.2-rc.1 Web Client",
+  "source": "Sintel dialogue excerpt; Chinese subtitle adaptation",
+  "durationSeconds": 28,
+  "installedClientMatchesPublished": true,
+  "clientSha256": "c6b3a0660cda4da284bdce1a12243f52a1553c12c7e0547c6470a95cb56d62a6",
+  "sourceAudioUnchanged": true,
+  "audioDecodeSha256": "3a251aa547ed7540a8baeaab4a504deb413a0274d3d743c449f2ea70f8afa144",
+  "waveform": {
+    "buckets": 5895,
+    "stats": {
+      "min": 0.00034505396479093996,
+      "p10": 0.0013823627860218633,
+      "median": 0.004254675538009202,
+      "p90": 0.02270675171586944,
+      "max": 0.09241269834144437
+    },
+    "independentComparison": "One-second PCM RMS compared with actual server buckets at the same 8 kHz analysis bandwidth",
+    "maximumRelativeError": 0.0010729311706956762,
+    "measurements": [
+      {
+        "second": 0,
+        "measuredRms": 0.027652405435661324,
+        "pluginRms": 0.02765489531455339,
+        "relativeError": 0.00009004203622928322
+      },
+      {
+        "second": 1,
+        "measuredRms": 0.023054515655068445,
+        "pluginRms": 0.023051572356950965,
+        "relativeError": 0.00012766688146984882
+      },
+      {
+        "second": 2,
+        "measuredRms": 0.005888077609440692,
+        "pluginRms": 0.005887854562384958,
+        "relativeError": 0.00003788113379762547
+      },
+      {
+        "second": 3,
+        "measuredRms": 0.004079805182407295,
+        "pluginRms": 0.004080135707753314,
+        "relativeError": 0.0000810149826379795
+      },
+      {
+        "second": 4,
+        "measuredRms": 0.005696176844763021,
+        "pluginRms": 0.005696487480672083,
+        "relativeError": 0.00005453410551111565
+      },
+      {
+        "second": 5,
+        "measuredRms": 0.002717484756466618,
+        "pluginRms": 0.0027175540708028203,
+        "relativeError": 0.00002550679853390186
+      },
+      {
+        "second": 6,
+        "measuredRms": 0.023444432512348106,
+        "pluginRms": 0.02344501296283712,
+        "relativeError": 0.000024758564265031847
+      },
+      {
+        "second": 7,
+        "measuredRms": 0.004816167767410641,
+        "pluginRms": 0.0048126685255461855,
+        "relativeError": 0.000726561455797576
+      },
+      {
+        "second": 8,
+        "measuredRms": 0.018074542349672568,
+        "pluginRms": 0.018058216871315445,
+        "relativeError": 0.0009032305239760653
+      },
+      {
+        "second": 9,
+        "measuredRms": 0.01963305760367985,
+        "pluginRms": 0.019648151565077134,
+        "relativeError": 0.0007688033979207035
+      },
+      {
+        "second": 10,
+        "measuredRms": 0.006197990085546956,
+        "pluginRms": 0.006197949854240653,
+        "relativeError": 0.000006491024630175154
+      },
+      {
+        "second": 11,
+        "measuredRms": 0.023487577509214496,
+        "pluginRms": 0.02348770353426645,
+        "relativeError": 0.000005365604515992527
+      },
+      {
+        "second": 12,
+        "measuredRms": 0.002795565717441645,
+        "pluginRms": 0.0027945356452121857,
+        "relativeError": 0.00036846646924902746
+      },
+      {
+        "second": 13,
+        "measuredRms": 0.0020399672494230427,
+        "pluginRms": 0.0020395457146678915,
+        "relativeError": 0.0002066380013063548
+      },
+      {
+        "second": 14,
+        "measuredRms": 0.01416966868568068,
+        "pluginRms": 0.014170149854867822,
+        "relativeError": 0.00003395768791884813
+      },
+      {
+        "second": 15,
+        "measuredRms": 0.004975566777406738,
+        "pluginRms": 0.00497641829721559,
+        "relativeError": 0.0001711402634004348
+      },
+      {
+        "second": 16,
+        "measuredRms": 0.00936969612014377,
+        "pluginRms": 0.009367675988198003,
+        "relativeError": 0.00021560271751224755
+      },
+      {
+        "second": 17,
+        "measuredRms": 0.010615738574453373,
+        "pluginRms": 0.010619068048930137,
+        "relativeError": 0.0003136356885026917
+      },
+      {
+        "second": 18,
+        "measuredRms": 0.005711372909519681,
+        "pluginRms": 0.005706517250472526,
+        "relativeError": 0.0008501737015038536
+      },
+      {
+        "second": 19,
+        "measuredRms": 0.0043081239953713345,
+        "pluginRms": 0.004305646545519425,
+        "relativeError": 0.000575064657974292
+      },
+      {
+        "second": 20,
+        "measuredRms": 0.020419172139134616,
+        "pluginRms": 0.020419767410814534,
+        "relativeError": 0.00002915258639581861
+      },
+      {
+        "second": 21,
+        "measuredRms": 0.013959026850804818,
+        "pluginRms": 0.013958947955311376,
+        "relativeError": 0.000005651933640172137
+      },
+      {
+        "second": 22,
+        "measuredRms": 0.002034489800076948,
+        "pluginRms": 0.0020343674641542624,
+        "relativeError": 0.00006013100811851892
+      },
+      {
+        "second": 23,
+        "measuredRms": 0.003191782090819623,
+        "pluginRms": 0.003189421646507391,
+        "relativeError": 0.0007395380527452272
+      },
+      {
+        "second": 24,
+        "measuredRms": 0.016463698405853263,
+        "pluginRms": 0.01644603399064869,
+        "relativeError": 0.0010729311706956762
+      },
+      {
+        "second": 25,
+        "measuredRms": 0.016986542691072717,
+        "pluginRms": 0.01700373433201048,
+        "relativeError": 0.0010120741607295683
+      },
+      {
+        "second": 26,
+        "measuredRms": 0.0023822293242131785,
+        "pluginRms": 0.00238275221086194,
+        "relativeError": 0.00021949467393709242
+      },
+      {
+        "second": 27,
+        "measuredRms": 0.004641408677610968,
+        "pluginRms": 0.004642408671478429,
+        "relativeError": 0.0002154505101619127
+      }
+    ]
+  },
+  "ui": {
+    "waveHeightBefore": 92,
+    "waveHeightAfterZoom": 92,
+    "zoom": 1.9738777322304477,
+    "selectedRangePlaybackAdvanced": true,
+    "pageErrors": [],
+    "notesPersistedAfterReopen": true,
+    "selectingNoteSeeksToItsTime": true
+  }
+}
