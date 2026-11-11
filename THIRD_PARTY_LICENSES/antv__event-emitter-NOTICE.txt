@@ -1,0 +1,2 @@
+@antv/event-emitter 0.1.3
+Upstream package declares MIT. The distributed package and its source repository contain no separate license file. Original declaration is preserved in the adjacent package.json. Existing source notices are retained in the bundle. The MIT permission text is included in MIT-permission.txt.

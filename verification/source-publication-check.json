@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0-rc.6",
+  "verifiedPackageSha256": "1d7aea43155a6050d392a16398bd3f1992a2218eeaa150d43b4bd0a127f0142e",
+  "runtimeFilesRebuiltIdentically": 117,
+  "runtimeIndexMatchesVerifiedArchive": true,
+  "publicSourceTypecheck": true,
+  "publicSourceBuild": true,
+  "testsWithConfiguredWhisper": {
+    "passed": 28,
+    "failed": 0,
+    "skipped": 0
+  },
+  "defaultTests": {
+    "passed": 27,
+    "failed": 0,
+    "skipped": 1
+  },
+  "skippedTest": "Actual Chinese speech recognition requires explicitly configured Whisper CPU and multilingual model.",
+  "publicSourceChanges": "Download and installation documentation, distribution notes and portable test fixture/tool entrypoints. Release tgz bytes are unchanged.",
+  "privacyCheck": "Explicit file allowlist; no private workspace paths, credentials, original media, model sessions, user review records or development logs included.",
+  "historicalEvidence": "Other verification JSON files retain their original observation-time publication state."
+}

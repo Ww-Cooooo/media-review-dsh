@@ -1,0 +1,41 @@
+{
+  "version": "0.1.0-rc.6",
+  "carrier": "dsh-app://app/",
+  "coldStart": true,
+  "pluginLoaded": true,
+  "manualMethodAvailable": true,
+  "packageSha256": "1d7aea43155a6050d392a16398bd3f1992a2218eeaa150d43b4bd0a127f0142e",
+  "filesMatched": 265,
+  "newTaskStartsAtZero": true,
+  "previousTaskRestoresOwnPosition": true,
+  "newTaskRestoresOwnPosition": true,
+  "wheel": {
+    "start": 2456.0656906171944,
+    "end": 7889.300887948057,
+    "zoom": 1.8221188003905089,
+    "height": 92
+  },
+  "wheelAnchorErrorMs": 0.6549508508305735,
+  "directRangeSaved": true,
+  "directFrameSaved": true,
+  "originalUnsavedDraftsPreserved": true,
+  "pageErrors": [],
+  "realRoundCompleteOnFinalPackage": true,
+  "comparisonOn1280": true,
+  "finalUserReviewRoundTrip": true,
+  "finalWaveHeight1440": 92,
+  "freshOfficialProfileLoaded": true,
+  "cleanProfileNotePreserved": true,
+  "cleanProfileWaveHeight": 92,
+  "reducedMotionPageErrors": [
+    "scope 'session-maybe' rendered without an installed adapter"
+  ],
+  "isolatedStartupObservation": {
+    "message": "scope 'session-maybe' rendered without an installed adapter",
+    "count": 1,
+    "reproducedOnReload": false,
+    "pluginUsableAfterward": true,
+    "attribution": "source not established; occurred in isolated Harness Web Client startup"
+  },
+  "queuedTranscriptLabelCorrect": true
+}

@@ -1,0 +1,23 @@
+{
+  "whisper": {
+    "version": "1.7.6",
+    "url": "https://github.com/ggml-org/whisper.cpp/releases/download/v1.7.6/whisper-bin-x64.zip",
+    "sha256": "0d2eca299c248f965bd0341bcb219db4b433c7f0c0ce2200d4df85765e8156a9",
+    "bytes": 3675974,
+    "entry": "Release/whisper-cli.exe"
+  },
+  "model": {
+    "version": "small-5359861c",
+    "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-small.bin",
+    "sha256": "1be3a9b2063867b937e64e2ec7483364a79917e157fa98c5d94b5c1fffea987b",
+    "bytes": 487601967,
+    "entry": "ggml-small.bin"
+  },
+  "ffmpeg": {
+    "version": "9.0.2",
+    "url": "https://github.com/GyanD/codexffmpeg/releases/download/9.0.2/ffmpeg-9.0.2-essentials_build.zip",
+    "sha256": "60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba",
+    "bytes": 114768076,
+    "entry": "ffmpeg-9.0.2-essentials_build/bin/ffmpeg.exe"
+  }
+}

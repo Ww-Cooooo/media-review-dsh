@@ -1,0 +1,528 @@
+{
+  "version": "0.1.0-rc.6",
+  "carrier": "native Electron dsh-app://app/",
+  "results": [
+    {
+      "group": "open",
+      "ids": [
+        "P01",
+        "L01"
+      ],
+      "facts": {
+        "actualClient": "dsh-app://app/",
+        "nativeFileSelection": true,
+        "version": "0.1.0-rc.6"
+      },
+      "at": "2026-11-10T15:30:20.222Z"
+    },
+    {
+      "group": "playback",
+      "ids": [
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "facts": {
+        "playPause": true,
+        "muteRestored": true,
+        "speed": 1.5,
+        "wholeSeek": true,
+        "pageExpand": true,
+        "audioOnly": true,
+        "fineStepMs": 10,
+        "waveHeight": 92
+      },
+      "at": "2026-11-10T15:30:25.099Z"
+    },
+    {
+      "group": "timeline",
+      "ids": [
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "W09",
+        "W10",
+        "W11",
+        "W12",
+        "W13",
+        "N01",
+        "N03",
+        "N05",
+        "N08",
+        "N10"
+      ],
+      "facts": {
+        "anchoredTimeErrorMs": 7.523729148677376,
+        "wheelZoom": 1.9738777322304477,
+        "height": 92,
+        "follow": true,
+        "hover": true,
+        "homeEndVisible": true,
+        "rangeSaved": true,
+        "handles": true,
+        "loopStarted": true,
+        "boundaries": true,
+        "directTyping": true
+      },
+      "at": "2026-11-10T15:30:37.893Z"
+    },
+    {
+      "group": "frames",
+      "ids": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "N09"
+      ],
+      "facts": {
+        "multiRegion": true,
+        "frameMs": 12000,
+        "bodyPreservedOnRegionUndo": true,
+        "coordinates": true,
+        "restoreMarks": true,
+        "referenceZoomWithBoxes": true,
+        "frameIndex": true
+      },
+      "at": "2026-11-10T15:31:01.536Z"
+    },
+    {
+      "group": "subtitles",
+      "ids": [
+        "T02",
+        "T03",
+        "T04",
+        "T05"
+      ],
+      "facts": {
+        "importedFile": "rc6-lines.vtt",
+        "cues": 40,
+        "followScroll": 599,
+        "manualWheelStopsFollow": true,
+        "search": 1,
+        "cueRangeSaved": true
+      },
+      "at": "2026-11-10T15:31:16.547Z"
+    },
+    {
+      "group": "audioCompare",
+      "ids": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05"
+      ],
+      "facts": {
+        "localBSelected": true,
+        "sameStart": 1,
+        "mutualExclusion": true,
+        "mainStopsCompare": true,
+        "durationDifferenceVisible": true
+      },
+      "at": "2026-11-10T15:31:18.487Z"
+    },
+    {
+      "group": "recovery",
+      "ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "N07",
+        "L11"
+      ],
+      "facts": {
+        "browserAndHostBackup": true,
+        "archivedBeforeRecovery": true,
+        "perNoteComparison": true,
+        "restoredAndSaved": true,
+        "locationsShown": 3
+      },
+      "at": "2026-11-10T15:31:23.908Z"
+    },
+    {
+      "group": "notes",
+      "ids": [
+        "N01",
+        "N02",
+        "N04",
+        "N05",
+        "N06",
+        "N08",
+        "N10"
+      ],
+      "facts": {
+        "wholeKeepTopic": true,
+        "ctrlEnterSave": true,
+        "deleteUndo": true,
+        "categoryFilter": true,
+        "existingDirectEditing": true
+      },
+      "at": "2026-11-10T15:31:28.839Z"
+    },
+    {
+      "group": "library",
+      "ids": [
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06"
+      ],
+      "facts": {
+        "idSearch": true,
+        "stateFilter": true,
+        "openedSort": true,
+        "batchArchiveRestore": true,
+        "endIsNotApproval": true,
+        "reopen": true,
+        "suspendResume": true
+      },
+      "at": "2026-11-10T15:32:10.640Z"
+    },
+    {
+      "group": "inspection",
+      "ids": [
+        "V10",
+        "T07",
+        "T09",
+        "R08",
+        "R09",
+        "R10"
+      ],
+      "facts": {
+        "actualDecode": true,
+        "framesAtLeast5": true,
+        "analysisActivity": true,
+        "toolsDetected": true,
+        "settingsViaHost": true,
+        "hostLifecycle": true,
+        "originalSkillDataSeparate": true
+      },
+      "at": "2026-11-10T15:32:14.349Z"
+    },
+    {
+      "group": "frame-operation-details",
+      "ids": [
+        "F03",
+        "F04",
+        "F08",
+        "F09"
+      ],
+      "facts": {
+        "moved": true,
+        "resized": true,
+        "deleteRegionRestored": true,
+        "range": [
+          10000,
+          15000
+        ],
+        "independentReferenceMs": 12000
+      },
+      "at": "2026-11-10T15:35:47.545Z"
+    },
+    {
+      "group": "conflict-and-lease",
+      "ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "facts": {
+        "secondClientTakeover": true,
+        "readOnlyBeforeEdit": true,
+        "oldWriterRejected": true,
+        "explicitTakeover": true,
+        "conflictContainsBodyTimesReferenceRectsAndTexts": true,
+        "keptLocalChoiceAndSaved": true
+      },
+      "at": "2026-11-10T15:38:12.682Z"
+    },
+    {
+      "group": "tool-preparation",
+      "ids": [
+        "T09",
+        "R08"
+      ],
+      "facts": {
+        "actualNativeChineseRecognition": true,
+        "reused": [
+          "ffprobe",
+          "ffmpeg",
+          "whisper",
+          "model"
+        ],
+        "downloaded": [],
+        "secondRunReusedVerification": true
+      },
+      "at": "2026-11-10T15:38:12.682Z"
+    },
+    {
+      "group": "additional-native",
+      "ids": [
+        "F12",
+        "A03",
+        "A04",
+        "T01",
+        "T06",
+        "T08",
+        "V01",
+        "V05",
+        "V07",
+        "V11",
+        "V12"
+      ],
+      "facts": {
+        "frameIndexStopObserved": true,
+        "frameIndexRegeneratedSeekMs": 12833,
+        "audioBStoppedAtSeconds": 9.186736,
+        "audioBStartSeconds": 1,
+        "audioBLoopContinued": true,
+        "transcriptionCancelledRetainsImportedCues": 40,
+        "speechCues": [
+          {
+            "id": "1",
+            "startMs": 0,
+            "endMs": 2000,
+            "text": "这是字幕测试。"
+          },
+          {
+            "id": "2",
+            "startMs": 2000,
+            "endMs": 6000,
+            "text": "今天我们一起检查声音和画面。"
+          }
+        ],
+        "manualMetadataRegistered": true,
+        "secondRoundOnlyUnresolved": true,
+        "secondRoundState": "reviewed",
+        "supplementOnReturnedVersion": true,
+        "scope": "Synthetic fixtures; user controls operated by validation executor, not artistic acceptance"
+      },
+      "at": "2026-11-10T15:53:40.944Z"
+    },
+    {
+      "group": "cold-reopen",
+      "ids": [
+        "P10",
+        "R02"
+      ],
+      "facts": {
+        "text": "rc6 重启恢复验证：保留这段未保存输入",
+        "time": 17.25
+      },
+      "at": "2026-11-10T15:54:26.137Z"
+    },
+    {
+      "group": "relink",
+      "ids": [
+        "R06"
+      ],
+      "facts": {
+        "differentFileRejected": true,
+        "exactBytesAtNewPath": true,
+        "sameTaskId": true,
+        "notesPreserved": true
+      },
+      "at": "2026-11-10T15:55:19.719Z"
+    },
+    {
+      "group": "manual-version-narrow",
+      "ids": [
+        "V08",
+        "V06"
+      ],
+      "facts": {
+        "manualVersionRegistered": true,
+        "directlyOpenedResult": true,
+        "ownerExplanationSeparateFromConfirmation": true,
+        "reviewed": true,
+        "narrowWidth": 1280,
+        "comparisonVisible": true
+      },
+      "at": "2026-11-10T15:55:49.674Z"
+    },
+    {
+      "group": "handoff-export",
+      "ids": [
+        "V03",
+        "L07",
+        "L08",
+        "L09",
+        "L10"
+      ],
+      "facts": {
+        "clipboardContainsFixedRound": true,
+        "actualDownloads": [
+          "rc6-native-export.zip",
+          "rc6-native-round-export.zip"
+        ]
+      },
+      "at": "2026-11-10T15:56:05.850Z"
+    },
+    {
+      "group": "waveform-measurement",
+      "ids": [
+        "W01",
+        "W02",
+        "W04",
+        "W12"
+      ],
+      "facts": {
+        "width": 1280,
+        "height": 92,
+        "pixels40": {
+          "width": 680,
+          "height": 69,
+          "rms": [
+            2.386904241395224,
+            1.1723936531240833,
+            0.6351911750924752
+          ],
+          "max": 19,
+          "silence": [
+            0,
+            0,
+            0
+          ]
+        },
+        "pixels100": {
+          "width": 680,
+          "height": 69,
+          "rms": [
+            5.853592906739658,
+            2.814262488653188,
+            1.507245523076019
+          ],
+          "max": 47,
+          "silence": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ratios": [
+          1,
+          0.4807752321506552,
+          0.2574906637837113
+        ],
+        "heightRatio": 2.4523786104288963,
+        "audioUnchanged": true,
+        "quietZoomMaximum": 15,
+        "quietZoomHeight": 69,
+        "secondWindowHeight": 92
+      },
+      "at": "2026-11-10T15:58:23.180Z"
+    },
+    {
+      "group": "analysis-queue",
+      "ids": [
+        "T06",
+        "T07"
+      ],
+      "facts": {
+        "realTranscriptQueuedBehindOther": true,
+        "activityNamesAndPhaseVisible": true,
+        "cancelledActiveAnalysis": true,
+        "lowMemoryBranch": "separate controlled contract test"
+      },
+      "at": "2026-11-10T15:59:08.552Z"
+    },
+    {
+      "group": "incomplete-frame",
+      "ids": [
+        "F07",
+        "N08",
+        "N09"
+      ],
+      "facts": {
+        "emptyRegionRejected": true,
+        "ctrlEnterFinishesRegionOnly": true,
+        "wholeOpinionSavedExplicitly": true,
+        "referenceMs": 19000
+      },
+      "at": "2026-11-10T15:59:38.103Z"
+    },
+    {
+      "group": "keyboard-playback",
+      "ids": [
+        "P04",
+        "P07",
+        "P08",
+        "N05"
+      ],
+      "facts": {
+        "allSixRatesApplied": true,
+        "fineStepsMs": [
+          10,
+          40,
+          100
+        ],
+        "arrowStepSeconds": 1,
+        "nativeFullscreenEntered": true,
+        "nextShortcutChangedSelection": true
+      },
+      "at": "2026-11-10T16:00:35.174Z"
+    },
+    {
+      "group": "empty-completion",
+      "ids": [
+        "V02"
+      ],
+      "facts": {
+        "explicitNoChangeFinish": true,
+        "emptyRoundNotCreated": true,
+        "newReviewAvailable": true
+      },
+      "at": "2026-11-10T16:01:25.454Z"
+    },
+    {
+      "group": "library-rename",
+      "ids": [
+        "L04",
+        "L05"
+      ],
+      "facts": {
+        "renameSaved": true,
+        "paginationVisible": true
+      },
+      "at": "2026-11-10T16:01:26.296Z"
+    },
+    {
+      "group": "find-organize-locations",
+      "ids": [
+        "N06",
+        "L05",
+        "L11"
+      ],
+      "facts": {
+        "regionAndBodySearch": true,
+        "secondTaskPageOpened": true,
+        "openFolderActionReturnedWithoutError": true
+      },
+      "at": "2026-11-10T16:03:56.765Z"
+    }
+  ]
+}

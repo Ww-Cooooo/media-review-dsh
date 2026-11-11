@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0-rc.6",
+  "carrier": "user-configured native DeepSeek Harness",
+  "syntheticFixture": true,
+  "firstRoundNotes": 3,
+  "secondRoundNotes": 1,
+  "onlyUnresolvedCarried": true,
+  "secondRoundState": "reviewed",
+  "actualVersionFiles": [
+    "native-rc6-v2.mp4",
+    "native-rc6-v3.mp4"
+  ],
+  "userArtisticApproval": false,
+  "publiclyPublished": false,
+  "modelRunCandidateSha256": "3bb09133c20d36219a6a75356daf4be35b8997bcbdae09803d79aefef37f8acd",
+  "finalPackageSha256": "1d7aea43155a6050d392a16398bd3f1992a2218eeaa150d43b4bd0a127f0142e",
+  "finalRevisionScope": "After the two model rounds, manual-result entry, narrow comparison, cross-task playback restoration and queue wording were refined. The final installed package rechecked these changes and the returned review state; the media generation was not rerun with final documentation bytes."
+}

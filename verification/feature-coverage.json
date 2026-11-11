@@ -1,0 +1,1059 @@
+{
+  "version": "0.1.0-rc.6",
+  "items": [
+    {
+      "id": "P01",
+      "behavior": "选择本机视频或音频，开始独立审阅",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：open",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "confirmed-adaptation",
+      "implementation": "从 Harness 工作区选本机文件；支持仅人工审片，不要求先配置模型。"
+    },
+    {
+      "id": "P02",
+      "behavior": "播放、暂停、显示当前位置和总时长",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：playback",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "P03",
+      "behavior": "调整音量；一键静音，再恢复静音前的音量",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：playback",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "P04",
+      "behavior": "0.5、0.75、1、1.25、1.5、2 倍速播放",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：playback、keyboard-playback",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "P05",
+      "behavior": "全片进度条与可放大的波形分别定位",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：playback",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "P06",
+      "behavior": "显示毫秒时间，例如 00:12.480",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：playback",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "P07",
+      "behavior": "方向键前后 1 秒；细移可选 10／40／100 毫秒；还有细移按钮",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：playback、keyboard-playback",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "P08",
+      "behavior": "视频在页面内放大／收起；另有全屏；全屏失败时仍可页面内放大",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：playback、keyboard-playback",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "P09",
+      "behavior": "看视频时切换“只听声音”，将审阅重心转到声音、波形和台词",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：playback",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "P10",
+      "behavior": "恢复上次素材位置和未保存意见",
+      "implemented": true,
+      "verification": "冷启动恢复 17.250 秒与原未保存文字；最终包另查跨作品播放位置隔离。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "冷启动恢复 17.250 秒与原未保存文字；最终包另查跨作品播放位置隔离。"
+    },
+    {
+      "id": "W01",
+      "behavior": "从真实音轨计算波形，用起伏辨认声音强弱和停顿",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline、waveform-measurement",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "W02",
+      "behavior": "整段使用统一标尺，放大不同时间区间时保持强弱可比",
+      "implemented": true,
+      "verification": "实际三档声音像素比例约 1:0.481:0.257；弱音区时间放大仍沿用全片标尺。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "实际三档声音像素比例约 1:0.481:0.257；弱音区时间放大仍沿用全片标尺。"
+    },
+    {
+      "id": "W03",
+      "behavior": "鼠标悬在波形上，滚轮放大缩小；鼠标指着的时间尽量保持不动",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "W04",
+      "behavior": "按钮放大／缩小、左右移动视野、恢复全览、查看缩放倍数",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline、waveform-measurement",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "W05",
+      "behavior": "播放越过放大后的右边界时，时间轴自动跟到后面的内容",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "W06",
+      "behavior": "悬停显示鼠标位置的时间和 RMS 强度读数",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "W07",
+      "behavior": "拖出一段时间，填写意见",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "W08",
+      "behavior": "拖动选段两端，调整起止时间",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "W09",
+      "behavior": "播放中按 I 标起点，继续听，再按 O 标终点；也有按钮",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "W10",
+      "behavior": "回放选段；可带前后 0.5／1／2 秒上下文；循环试听",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "W11",
+      "behavior": "波形上显示意见标记，点击定位相关意见",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "W12",
+      "behavior": "原版有“强弱增强”开关",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline、waveform-measurement",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "confirmed-adaptation",
+      "implementation": "按用户确认改为全片统一线性显示比例，保留弱音的真实比例；组件固定 92 px。"
+    },
+    {
+      "id": "W13",
+      "behavior": "放大后仍能通过键盘定位当前视野边界",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "A01",
+      "behavior": "选择另一份本机音频作为 B，与当前 A 对比",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：audioCompare",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "A02",
+      "behavior": "设定同一试听起点，或使用当前播放点附近的位置",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：audioCompare",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "A03",
+      "behavior": "分别点 A／B，从同一位置开始，最多听 8 秒",
+      "implemented": true,
+      "verification": "同起点 A/B，约 8 秒短段停止；浏览器媒体事件存在约 0.2 秒级停止误差，不是采样级编辑器。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "同起点 A/B，约 8 秒短段停止；浏览器媒体事件存在约 0.2 秒级停止误差，不是采样级编辑器。"
+    },
+    {
+      "id": "A04",
+      "behavior": "循环同一小段，暂停对照；播放主素材时停止对照，避免叠音",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：audioCompare、additional-native",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "A05",
+      "behavior": "显示两份声音的时长差异，提醒同一秒可能已不是同一句话",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：audioCompare",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "F01",
+      "behavior": "停在一帧，拖框并填写这处问题",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "F02",
+      "behavior": "同一帧连续添加多个编号框，每框独立说明",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "F03",
+      "behavior": "时间段与画面框共存；参考帧时间独立于时间段起点",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames、frame-operation-details",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "F04",
+      "behavior": "移动框、改变大小、按编号选择或删除",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames、frame-operation-details",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "F05",
+      "behavior": "输入百分比精调框的横向、纵向、宽、高",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "F06",
+      "behavior": "在框旁展开输入浮卡，靠边时调整位置",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "confirmed-adaptation",
+      "implementation": "按用户确认采用随选中项展开的右侧输入，不保留遮挡画面的旧浮卡。"
+    },
+    {
+      "id": "F07",
+      "behavior": "待填写与已填写的框按颜色、分组和数量清楚区分",
+      "implemented": true,
+      "verification": "空框阻止保存；补齐后 Ctrl+Enter 只结束框输入，整条意见仍需保存。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "空框阻止保存；补齐后 Ctrl+Enter 只结束框输入，整条意见仍需保存。"
+    },
+    {
+      "id": "F08",
+      "behavior": "单独撤回／恢复框的新增、移动、删除，不改变时间和正文",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames、frame-operation-details",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "F09",
+      "behavior": "清空时间标记或全部标记，同时保留意见文字；一键恢复刚清空的标记及框文字",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames、frame-operation-details",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "F10",
+      "behavior": "放大查看保存的参考帧，并叠加编号框",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "F11",
+      "behavior": "按需生成画面索引，点击缩略图跳转",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "F12",
+      "behavior": "缩略图随当前时间轴视野筛选；生成时可停止，完成后可重生成",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames、additional-native",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "N01",
+      "behavior": "给时间点、时间段、某帧区域、整份作品写意见",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline、notes",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "N02",
+      "behavior": "区分“修改、保留、待讨论”；再选画面／字幕／声音／节奏等类别",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：notes",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "N03",
+      "behavior": "先写文字再补位置；播放不会偷偷移动已记录的目标",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "N04",
+      "behavior": "保存、修改、删除意见；恢复刚删除的意见",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：notes",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "N05",
+      "behavior": "整片意见在前，其他意见按时间排列；点击定位，N 到下一条",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline、notes、keyboard-playback",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "N06",
+      "behavior": "搜索意见及返修说明，按问题类别和处理进度筛选",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：notes、find-organize-locations",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "N07",
+      "behavior": "新草稿、正在修改的意见、暂放草稿分别保留；查看旧意见不覆盖新输入",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：recovery",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "N08",
+      "behavior": "Ctrl／⌘＋Enter 保存整条意见；框旁输入中完成当前框",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline、notes、incomplete-frame",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "N09",
+      "behavior": "未填完的框提示缺项，不把“完成框填写”冒充“整条意见已保存”",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：frames、incomplete-frame",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "N10",
+      "behavior": "点旧意见先查看，再显式修改",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：timeline、notes",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "confirmed-adaptation",
+      "implementation": "按用户确认点中即可编辑，取消旧版多点一次的编辑门槛。"
+    },
+    {
+      "id": "T01",
+      "behavior": "使用本机 Whisper 识别中文台词，保留句子的时间范围",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：additional-native",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "T02",
+      "behavior": "导入 SRT／VTT，使用已有字幕定位",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：subtitles",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "T03",
+      "behavior": "搜索关键词、点整句跳转、把整句时间范围变成意见",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：subtitles",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "T04",
+      "behavior": "当前句高亮；字幕列表自动滚动跟随，可关闭；手动滚动或搜索后停止抢位置",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：subtitles",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "T05",
+      "behavior": "显示搜索匹配句数、识别句数和已导入的字幕文件名",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：subtitles",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "T06",
+      "behavior": "查看识别阶段、已用时间和有边界的预计进度；停止或重试",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：additional-native、analysis-queue",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "T07",
+      "behavior": "多份分析排队，缺资源时等待；能定位是哪份素材、哪项任务在分析",
+      "implemented": true,
+      "verification": "客户端实际两素材排队与取消；低内存等待另用受控业务测试。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json",
+        "tests/restoration.test.mjs"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "客户端实际两素材排队与取消；低内存等待另用受控业务测试。"
+    },
+    {
+      "id": "T08",
+      "behavior": "工具暂不可用时继续人工播放、标注与导入字幕",
+      "implemented": true,
+      "verification": "客户端人工读取同一文件已操作；独立安装环境把专属 ffprobe 暂时移走，实际使用 browser-verified 降级登记、播放并保存，再恢复工具。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json",
+        "rc6-clean-web-recovery.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "客户端人工读取同一文件已操作；独立安装环境把专属 ffprobe 暂时移走，实际使用 browser-verified 降级登记、播放并保存，再恢复工具。"
+    },
+    {
+      "id": "T09",
+      "behavior": "首次检查工具与模型，只补缺失项，验证下载和可用性",
+      "implemented": true,
+      "verification": "实际复用四项有效工具，通过中文识别；第二次沿用回执。全缺失联网下载未重复执行；拒绝错误校验值和越界路径的测试通过。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json",
+        "tests/restoration.test.mjs"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "实际复用四项有效工具，通过中文识别；第二次沿用回执。全缺失联网下载未重复执行；拒绝错误校验值和越界路径的测试通过。"
+    },
+    {
+      "id": "V01",
+      "behavior": "完成一轮时固定意见修订；之后编辑不会改变已交接内容",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：additional-native；另有两轮真实模型结果。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json",
+        "rc6-real-repair.json",
+        "native-rc6-v2-media-check.json",
+        "native-rc6-v3-media-check.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "V02",
+      "behavior": "没有问题时明确记录“本轮无需修改”",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：empty-completion",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "V03",
+      "behavior": "复制固定交接文本，交给另一制作对话",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：handoff-export",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "V04",
+      "behavior": "Agent 登记接手回执，并列出待澄清的意见编号",
+      "implemented": true,
+      "verification": "真实模型提交接手回执；待澄清编号有固定轮次成员校验，非空澄清列表未另发真实模型任务。",
+      "evidence": [
+        "rc6-real-repair.json",
+        "native-rc6-v2-media-check.json",
+        "native-rc6-v3-media-check.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "真实模型提交接手回执；待澄清编号有固定轮次成员校验，非空澄清列表未另发真实模型任务。"
+    },
+    {
+      "id": "V05",
+      "behavior": "每条意见登记处理说明，关联真实新版和新版位置",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：additional-native；另有两轮真实模型结果。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json",
+        "rc6-real-repair.json",
+        "native-rc6-v2-media-check.json",
+        "native-rc6-v3-media-check.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "V06",
+      "behavior": "V1、V2 等各自保留；回看原意见、参考帧和处理结果",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：manual-version-narrow；另有两轮真实模型结果。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json",
+        "rc6-real-repair.json",
+        "native-rc6-v2-media-check.json",
+        "native-rc6-v3-media-check.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "V07",
+      "behavior": "人逐条确认已改好，或重新打开问题",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：additional-native；另有两轮真实模型结果。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json",
+        "rc6-real-repair.json",
+        "native-rc6-v2-media-check.json",
+        "native-rc6-v3-media-check.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "V08",
+      "behavior": "手动选择同一作品的新版本，建立版本关系",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：manual-version-narrow",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "V09",
+      "behavior": "首版和每次导出新版时，Agent 按 Skill 主动送审并登记独立任务",
+      "implemented": true,
+      "verification": "本地原生客户端两轮真实模型返修及独立文件测量。",
+      "evidence": [
+        "rc6-real-repair.json",
+        "native-rc6-v2-media-check.json",
+        "native-rc6-v3-media-check.json"
+      ],
+      "disposition": "confirmed-adaptation",
+      "implementation": "原生登记工具与交接协议承接送审；两轮实际模型已遵守，不能保证任意制作会话都会自动执行。"
+    },
+    {
+      "id": "V10",
+      "behavior": "导出后排队技术自检：全片解码、黑场／静音线索、代表帧及指定修改点取帧",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：inspection；另有两轮真实模型结果。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json",
+        "rc6-real-repair.json",
+        "native-rc6-v2-media-check.json",
+        "native-rc6-v3-media-check.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "V11",
+      "behavior": "Agent 记录实际看过／听过哪些区间、画面／声音／字幕／节奏、发现、未核实项及保留项核对",
+      "implemented": true,
+      "verification": "实际记录区间、画面/字幕/声音等检查依据及未核实项；主观试听未冒充完成。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json",
+        "rc6-real-repair.json",
+        "native-rc6-v2-media-check.json",
+        "native-rc6-v3-media-check.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "实际记录区间、画面/字幕/声音等检查依据及未核实项；主观试听未冒充完成。"
+    },
+    {
+      "id": "V12",
+      "behavior": "本轮未解决的意见继续返修",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：additional-native；另有两轮真实模型结果。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json",
+        "rc6-real-repair.json",
+        "native-rc6-v2-media-check.json",
+        "native-rc6-v3-media-check.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "V13",
+      "behavior": "不覆盖原媒体，旧坐标只属于旧版；用户确认不等于发布许可",
+      "implemented": true,
+      "verification": "本地原生客户端两轮真实模型返修及独立文件测量。",
+      "evidence": [
+        "rc6-real-repair.json",
+        "native-rc6-v2-media-check.json",
+        "native-rc6-v3-media-check.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "L01",
+      "behavior": "多项任务互不串片；识别所属作品、版本和来源",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：open、library",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "L02",
+      "behavior": "搜索任务名、来源、文件名或任务编号",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：library",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "L03",
+      "behavior": "按待校对／已结束／已归档筛选；按最近送达／最近打开排序",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：library",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "L04",
+      "behavior": "重命名、归档、恢复任务",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：library、library-rename",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "L05",
+      "behavior": "选择多项任务，批量归档或恢复；任务列表分页",
+      "implemented": true,
+      "verification": "实际分页、选择本页、批量归档/恢复入口与重命名；保留原作品。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "实际分页、选择本页、批量归档/恢复入口与重命名；保留原作品。"
+    },
+    {
+      "id": "L06",
+      "behavior": "挂起当前素材释放资源；结束等待后可重开，结束不等于通过或删除",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：library",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "L07",
+      "behavior": "导出离线 HTML 清单、JSON 完整意见和原始参考图",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：handoff-export",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "L08",
+      "behavior": "另有可直接阅读的 Markdown 文字清单",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：handoff-export",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "L09",
+      "behavior": "每条意见另存独立的带编号框 SVG 图片，可单独交给别人",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：handoff-export",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "L10",
+      "behavior": "导出资料包身份与轮次元数据，保留原媒体身份和对应修订",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：handoff-export",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "L11",
+      "behavior": "查看正式意见、恢复副本、参考图的真实位置，直接打开对应文件夹",
+      "implemented": true,
+      "verification": "显示三类真实位置，调用打开文件夹返回成功；未把文件位置当作插件安装目录。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "显示三类真实位置，调用打开文件夹返回成功；未把文件位置当作插件安装目录。"
+    },
+    {
+      "id": "R01",
+      "behavior": "恢复草稿与正式保存分开，不把暂存冒充保存成功",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：recovery、conflict-and-lease",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "R02",
+      "behavior": "恢复副本同时保存在浏览器与本机资料库；回读确认后再释放输入",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：recovery、conflict-and-lease、cold-reopen",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "R03",
+      "behavior": "恢复旧副本前逐条比较，并独立归档旧副本",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：recovery、conflict-and-lease",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "R04",
+      "behavior": "保存冲突时分别看正文、起止时间、参考帧、框位置和每框说明，逐条选择保留哪份",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：recovery、conflict-and-lease",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "R05",
+      "behavior": "同一任务多窗口时只允许一个编辑者，其余只读；需要时明确接管",
+      "implemented": true,
+      "verification": "两个真实客户端身份请求验证接管；原生页面变只读并可显式接管。未使用两扇原生窗口并排操作。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json",
+        "tests/restoration.test.mjs"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "两个真实客户端身份请求验证接管；原生页面变只读并可显式接管。未使用两扇原生窗口并排操作。"
+    },
+    {
+      "id": "R06",
+      "behavior": "文件移动后“手选同版”，匹配媒体身份后继续原任务和意见",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：relink",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "保留或恢复原功能，入口按已确认的简洁界面组织。"
+    },
+    {
+      "id": "R07",
+      "behavior": "断连时保留输入，明确显示连接状态；恢复连接不强制刷新丢输入",
+      "implemented": true,
+      "verification": "独立安装的 Web Client 实际断网、显示断连、保留输入、连接恢复后保存；原生 IPC 通道不冒称相同断网测试。",
+      "evidence": [
+        "rc6-clean-web-recovery.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "独立安装的 Web Client 实际断网、显示断连、保留输入、连接恢复后保存；原生 IPC 通道不冒称相同断网测试。"
+    },
+    {
+      "id": "R08",
+      "behavior": "查看运行版本、来源、本机定制、工具与模型是否就绪",
+      "implemented": true,
+      "verification": "客户端实际查看版本和工具就绪状态；配置通过 Harness 官方配置服务保存。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "客户端实际查看版本和工具就绪状态；配置通过 Harness 官方配置服务保存。"
+    },
+    {
+      "id": "R09",
+      "behavior": "本机独立服务的启动、重启、退出、空闲关闭及多窗口影响提示",
+      "implemented": true,
+      "verification": "本地原生客户端已操作：inspection",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "confirmed-adaptation",
+      "implementation": "启动、更新、退出由 Harness 管理；插件保留挂起素材，不增加会退出整个客户端的服务按钮。"
+    },
+    {
+      "id": "R10",
+      "behavior": "原媒体只读；意见、截图与缓存分开；不擅自上传或发布",
+      "implemented": true,
+      "verification": "原有 33 文件核对，意见与旧轮次不变；仅增加测试记录与一个旧测试任务的最近打开时间。原 Skill 库未写入。",
+      "evidence": [
+        "rc6-desktop-ui-progress.json"
+      ],
+      "disposition": "restored-or-preserved",
+      "implementation": "原有 33 文件核对，意见与旧轮次不变；仅增加测试记录与一个旧测试任务的最近打开时间。原 Skill 库未写入。"
+    }
+  ]
+}

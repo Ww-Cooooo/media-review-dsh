@@ -1,0 +1,16 @@
+{
+  "carrier": "fresh official TGZ installation, Harness Web Client",
+  "realNetworkOffline": true,
+  "disconnectVisible": true,
+  "inputRetained": true,
+  "reconnectWithoutReload": true,
+  "savedAfterReconnect": true,
+  "pageErrors": [],
+  "manualFallback": {
+    "configuredProbeUnavailable": true,
+    "browserVerified": true,
+    "playable": true,
+    "opinionSaved": true,
+    "toolsRestored": true
+  }
+}

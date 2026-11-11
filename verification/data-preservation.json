@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0-rc.6",
+  "originalFilesChecked": 33,
+  "byteIdenticalFiles": 31,
+  "allowedChanges": [
+    "append-only new test tasks and operations in plugin index",
+    "updatedAt and lastOpenedAt of one pre-existing synthetic waveform task"
+  ],
+  "oldBindingsUnchanged": true,
+  "oldRoundsUnchanged": true,
+  "oldOperationsUnchanged": true,
+  "oldDraftExtrasUnchanged": true,
+  "oldPlaybackPreferencesUnchanged": true,
+  "oldUnsavedDrafts": 3,
+  "oldUnsavedDraftsUnchanged": true,
+  "originalMediaSha256": "77e91e5d56fd00178d92d4ade2da84d5fc0fa99f3dbb0063576db1a2a9f50701",
+  "originalSkillDataWritten": false
+}

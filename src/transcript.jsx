@@ -1,0 +1,18 @@
+import React from 'react';
+import {Button,Input,Alert,Tooltip,Switch,Progress} from 'antd';
+import {UploadOutlined,AudioOutlined,PauseOutlined,PlusOutlined} from '@ant-design/icons';
+import {time} from './viewer.jsx';
+
+export function Transcript({analysis,current,onSeek,onMark,onAction,readOnly}){
+  const [query,setQuery]=React.useState(''),[follow,setFollow]=React.useState(true),[now,setNow]=React.useState(Date.now()),input=React.useRef(null),list=React.useRef(null);
+  const running=['queued','running','waiting-resources'].includes(analysis?.state),cues=analysis?.cues||[],filtered=cues.filter(c=>!query||c.text.toLocaleLowerCase().includes(query.toLocaleLowerCase())),active=cues.find(c=>current>=c.startMs&&current<c.endMs)?.id;
+  React.useEffect(()=>{if(!running)return;const timer=setInterval(()=>setNow(Date.now()),1000);return()=>clearInterval(timer);},[running]);
+  React.useEffect(()=>{if(!follow||query||!active)return;const row=[...(list.current?.children||[])].find(el=>el.dataset.cue===active);if(row&&list.current){const top=row.offsetTop-list.current.offsetTop;list.current.scrollTop=Math.max(0,top-list.current.clientHeight/3);}},[active,follow,query]);
+  const elapsed=analysis?.startedAt?Math.max(0,Math.floor((now-Date.parse(analysis.startedAt))/1000)):0;
+  return <div className="mr-transcript"><div className="mr-transcript-tools"><Button size="small" icon={<AudioOutlined/>} disabled={running} onClick={()=>onAction('transcribe')}>{cues.length?'重新识别':'识别台词'}</Button><Button size="small" icon={<UploadOutlined/>} disabled={running} onClick={()=>input.current.click()}>导入字幕</Button>{running&&<Button size="small" icon={<PauseOutlined/>} onClick={()=>onAction('cancel')}>停止分析</Button>}</div>
+    <input ref={input} aria-label="导入字幕文件" type="file" accept=".srt,.vtt" hidden onChange={async e=>{const file=e.target.files?.[0];e.target.value='';if(!file)return;if(file.size>2*1024*1024){onAction('error','字幕文件不能超过 2 MB。');return;}onAction('import',await file.text(),file.name);}}/>
+    {running&&<div role="status"><p className="mr-muted">{analysis.state==='queued'?'等待本机分析':analysis.state==='waiting-resources'?'等待可用内存':analysis.phase==='transcript'?'正在本机识别台词':'正在生成波形'}{elapsed>0?` · ${elapsed} 秒`:''}</p>{Number.isFinite(analysis.progress)&&<Progress size="small" percent={analysis.progress}/>}<span className="mr-muted">{analysis.updatedAt&&now-Date.parse(analysis.updatedAt)>90000?'暂未收到新的进度，仍可停止后重试。':''}</span></div>}
+    {analysis?.transcriptError&&<Alert type="warning" title={analysis.transcriptError}/>}
+    {cues.length>0?<><Input.Search aria-label="搜索台词" placeholder="搜索台词" allowClear value={query} onChange={e=>{setQuery(e.target.value);if(e.target.value)setFollow(false);}}/><div className="mr-cue-status"><span title={analysis.fileName||analysis.source}>{query?`${filtered.length} / `:''}{cues.length} 句{analysis.fileName?` · ${analysis.fileName}`:''}</span><label><Switch size="small" checked={follow} onChange={value=>{setFollow(value);if(value)setQuery('');}}/> 跟随播放</label></div><div ref={list} className="mr-cues" onWheel={()=>setFollow(false)}>{filtered.map(c=><div key={c.id} data-cue={c.id} className="mr-cue" data-active={active===c.id}><Button type="text" className="mr-cue-text" onClick={()=>onSeek(c.startMs)}><span className="mr-mono">{time(c.startMs)}</span><span>{c.text}</span></Button>{!readOnly&&<Tooltip title="给这句写意见"><Button type="text" aria-label={`给台词 ${c.id} 写意见`} icon={<PlusOutlined/>} onClick={()=>onMark(c.startMs,c.endMs)}/></Tooltip>}</div>)}</div></>:!running&&<p className="mr-prose">识别台词或导入 SRT／VTT。点一句定位，点 ＋ 写意见。</p>}
+  </div>;
+}

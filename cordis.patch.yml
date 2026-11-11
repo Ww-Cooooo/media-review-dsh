@@ -1,0 +1,5 @@
+- insert:
+    - id: eh3-media-review
+      name: media-review-dsh
+      config:
+        dataDirectory: !!js dshHomePath('eh3-media-review')

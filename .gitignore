@@ -1,0 +1,9 @@
+node_modules/
+.build/
+artifacts/
+dist/
+fixtures/
+.env
+.env.*
+*.log
+.DS_Store
