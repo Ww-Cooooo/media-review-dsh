@@ -88,3 +88,9 @@ Host、React Client 和 Remote 使用同一业务存储；Remote 编解码器由
 - 导出包含 HTML、Markdown、完整 JSON、独立带编号框的 SVG、原参考图与身份／轮次信息。
 
 技术检查的解码、黑场／静音和取帧结果是检查线索；制作会话另行记录实际看过、听过的范围。最终是否改好由人判断。
+
+## 在其他 Agent 中问清需求
+
+如果你也希望在其他 Agent 中把模糊想法或“不满意”说清楚，可以单独安装原版 [Easy Ask AI Skill](https://github.com/Ww-Cooooo/easy-ask-ai)：Prompt Ready 用于开工前梳理需求、准备执行提示词，Get Clear 用于问清已有成果的修改要求，再按确认的范围返修。按目标 Agent 的实际技能机制接入，详见 [安装与接入说明](https://github.com/Ww-Cooooo/easy-ask-ai#安装与开始使用)。
+
+这是独立的需求澄清工具，不是本插件的其他 Agent 版本，也不是安装本插件的前置依赖。
