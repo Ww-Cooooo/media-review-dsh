@@ -57,4 +57,4 @@
 
 官方仓库插件专区的展示规则要求一个项目一篇讨论，标题包含 DSH、项目名和用途，正文包含项目链接、短简介、真实集成方式及截图、GIF 或视频，并显著说明为社区独立维护。社区投票不代表官方审核或推荐。[已读原文：[官方专区规则](https://github.com/deepseek-ai/deepseek-harness/discussions/2004)]
 
-因此：GitHub Release、社区展示帖、作者意向登记分别办理。本次完成仓库与安装包发布，未发布社区展示帖，未提交作者报名，也未声称获得官方收录或支持。
+GitHub Release、社区展示帖、作者意向登记分别办理。仓库与安装包已公开；2026 年 11 月 11 日已在官方 Show Your Plugins! 专区发布 [Media Review DSH 展示帖](https://github.com/deepseek-ai/deepseek-harness/discussions/12926)，包含插件介绍、安装步骤、三张实际截图与验证说明，并已确认帖子可公开访问、图片正常加载。作者意向登记由作者另行填写，本项目未代交。专区发帖不代表官方审核、推荐或市场收录。
