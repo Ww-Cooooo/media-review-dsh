@@ -93,10 +93,10 @@ dsh --profile media-review-dsh-test --host 127.0.0.1 --port 21047 --no-open
 
 普通用户仍可直接在桌面界面安装。源码中的 `scripts/install-package.ps1` 可安装到已经建立的配置环境，仅安装插件，不启动服务，也不初始化 Web 模板。
 
-在源码根目录使用 PowerShell 7，并把三个示例路径替换为你本机的实际位置：
+若需使用脚本，先在 [源码仓库](https://github.com/Ww-Cooooo/media-review-dsh) 点 **Code → Download ZIP** 并解压，进入同时包含 `package.json` 和 `scripts/` 的目录。这里的源码 ZIP 仅用于取得脚本，安装对象仍是另行下载的 tgz。使用 PowerShell 7，并把示例路径替换为本机实际位置：
 
 ```powershell
-pwsh -NoProfile -File ./scripts/install-package.ps1 -HarnessExe 'C:/Apps/DeepSeek Harness/DeepSeek Harness.exe' -HarnessHome 'C:/DSH-test-data/media-review' -Profile 'media-review-dsh-test' -Package './dist/media-review-dsh-0.1.0-rc.6.tgz'
+pwsh -NoProfile -File ./scripts/install-package.ps1 -HarnessExe 'C:/Apps/DeepSeek Harness/DeepSeek Harness.exe' -HarnessHome 'C:/DSH-test-data/media-review' -Profile 'media-review-dsh-test' -Package 'C:/Downloads/media-review-dsh-0.1.0-rc.6.tgz'
 ```
 
 `HarnessHome` 必须与创建该测试环境时使用的 `DSH_HOME` 一致。脚本调用桌面程序附带的官方安装器；桌面环境使用 `-Profile desktop` 并省略 `-HarnessHome`；若官方安装器要求退出客户端，先保存工作并完全退出，再重试。不要为桌面环境运行初始化模板命令。
