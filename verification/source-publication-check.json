@@ -1,22 +1,32 @@
 {
-  "version": "0.1.0-rc.6",
-  "verifiedPackageSha256": "1d7aea43155a6050d392a16398bd3f1992a2218eeaa150d43b4bd0a127f0142e",
-  "runtimeFilesRebuiltIdentically": 117,
-  "runtimeIndexMatchesVerifiedArchive": true,
-  "publicSourceTypecheck": true,
-  "publicSourceBuild": true,
-  "testsWithConfiguredWhisper": {
-    "passed": 28,
+  "version": "0.1.0-rc.8",
+  "publicPackageSha256": "72484ddb9f482efbb7c281c208459c7f45866231ca92e641e33b6d055eb750b6",
+  "localDesktopTestedPackageSha256": "cd6503f56bf958db2a403d03de34aa77520ac048f32a3b371eb0d18c4fafdb15",
+  "packageChangesFromDesktopTestedBuild": [
+    "package/INSTALL.md",
+    "package/README.md",
+    "package/THIRD_PARTY_NOTICES.md",
+    "package/VALIDATION.md"
+  ],
+  "runtimeAndPluginDeclarationIdentical": true,
+  "publicSourceBuildRuntimeFilesMatched": 117,
+  "publicPackageOfficialIsolatedInstallFilesMatched": 265,
+  "publicTypecheckPassed": true,
+  "publicOfficialBuildPassed": true,
+  "publicPortableTests": {
+    "total": 30,
+    "passed": 29,
+    "skipped": 1,
     "failed": 0,
-    "skipped": 0
+    "skipReason": "Real Whisper test requires an explicitly configured local executable and model."
   },
-  "defaultTests": {
-    "passed": 27,
-    "failed": 0,
-    "skipped": 1
+  "previousLocalConfiguredTests": {
+    "total": 30,
+    "passed": 30,
+    "failed": 0
   },
-  "skippedTest": "Actual Chinese speech recognition requires explicitly configured Whisper CPU and multilingual model.",
-  "publicSourceChanges": "Download and installation documentation, distribution notes and portable test fixture/tool entrypoints. Release tgz bytes are unchanged.",
-  "privacyCheck": "Explicit file allowlist; no private workspace paths, credentials, original media, model sessions, user review records or development logs included.",
-  "historicalEvidence": "Other verification JSON files retain their original observation-time publication state."
+  "desktopScope": "Previously tested rc.8 runtime; public archive changes documentation only. The two complete archive hashes are intentionally different.",
+  "newModelRun": false,
+  "actualSidebarShowcase": "showcase-rc8-check.json",
+  "privacyScope": "Explicit public-source and delivery allowlist; no credentials, private logs, user drafts or source media."
 }

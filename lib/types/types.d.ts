@@ -169,6 +169,23 @@ export interface BoardQuery {
     taskId?: string;
     roundId?: string;
 }
+export interface ConversationQuery {
+    sessionId: string;
+}
+export interface ConversationEntry {
+    id: string;
+    title: string;
+    workspaceId: string;
+    taskId: string;
+    viewTaskId: string;
+    roundId: string | null;
+}
+export interface ConversationReview {
+    sessionId: string;
+    workspaceId: string;
+    cursor: string;
+    entries: ConversationEntry[];
+}
 export interface Registration {
     operationId: string;
     workspaceId: string;

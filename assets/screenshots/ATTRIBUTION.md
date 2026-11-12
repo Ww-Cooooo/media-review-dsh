@@ -1,6 +1,6 @@
 # 展示素材来源
 
-这组三张截图来自实际安装的 Media Review DSH 0.1.0-rc.6 审片界面，使用同一段影片的真实音轨与画面。
+这组侧栏截图来自实际安装的 Media Review DSH 0.1.0-rc.8 审片界面，使用同一段影片的真实音轨与画面。
 
 影片为 **Sintel**，© copyright Blender Foundation | [durian.blender.org](https://durian.blender.org/)，采用 [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/)；见[项目授权说明](https://durian.blender.org/sharing/)。影片素材的许可独立于本仓库应用代码的 MIT 许可。
 

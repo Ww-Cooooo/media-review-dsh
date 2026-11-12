@@ -1,0 +1,68 @@
+{
+  "carrier": "actual configured Harness Desktop",
+  "fixtureNotModel": true,
+  "errors": [],
+  "checks": [
+    "Fixed entry immediately above composer; native sidebar preserves usable chat column",
+    "Continuous native resizing 320/480/680/900 px; actual container reflows without horizontal overflow; waveform stays 92 px",
+    "Direct range text, media instance, time and unsaved draft survive resize and native close/reopen; saved successfully",
+    "Paused-frame direct box and reference saved; dragging across layouts does not change normalized annotations",
+    "Chat composer is usable during review; no message sent",
+    "1280×800 and reduced motion: close/reopen/Escape preserve state and restore trigger focus",
+    "Cold renderer reload keeps closed state and correct review; composer entry stays fixed during chat scrolling"
+  ],
+  "initial": {
+    "trigger": {
+      "x": 304,
+      "y": 728,
+      "width": 120,
+      "height": 36,
+      "top": 728,
+      "right": 424,
+      "bottom": 764,
+      "left": 304
+    },
+    "composer": {
+      "x": 296,
+      "y": 772,
+      "width": 473,
+      "height": 98,
+      "top": 772,
+      "right": 769,
+      "bottom": 870,
+      "left": 296
+    },
+    "panel": {
+      "x": 793,
+      "y": 78,
+      "width": 647,
+      "height": 822,
+      "top": 78,
+      "right": 1440,
+      "bottom": 900,
+      "left": 793
+    },
+    "chat": {
+      "x": 280,
+      "y": 116,
+      "width": 512,
+      "height": 784,
+      "top": 116,
+      "right": 792,
+      "bottom": 900,
+      "left": 280
+    },
+    "splitters": []
+  },
+  "widths": [
+    900,
+    680,
+    480,
+    320,
+    680,
+    900
+  ],
+  "wheelZoom": 1.8221188003905089,
+  "viewportMethod": "Actual Electron renderer at controlled 1440×900, 1600×960 and 1280×800 viewports; sidebar width changed by dragging the host handle.",
+  "passed": true
+}

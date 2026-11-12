@@ -1,0 +1,15 @@
+{
+  "nativeDesktop": true,
+  "checks": [
+    "Playback, pause, speed selection, mute and restore remain usable at 480 px",
+    "Listening mode remains compact; subtitle import, search and cue seeking work in the narrow detail area",
+    "A/B switches without overlapping audio; real thumbnail generation and frame seeking work",
+    "Settings and draft recovery open and return without changing the current work",
+    "Closing the native tab and reopening restores the selected opinion",
+    "Conversation More still opens manual import and review history"
+  ],
+  "errors": [],
+  "tabControls": [],
+  "detailVisiblePixels": 313.5,
+  "passed": true
+}

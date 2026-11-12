@@ -1,6 +1,8 @@
 # 开发与测试
 
-源码对应 Media Review DSH 0.1.0-rc.6；支持 Windows、Node.js 24.9 以上、DeepSeek Harness 0.2.2-rc.1。普通用户直接按 [安装说明](INSTALL.md) 使用 Release 的 tgz。
+**在其他 Agent 中审片：**[下载 Media Review Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11)（Windows，Agent 需能访问本机文件并执行命令）。
+
+源码对应 Media Review DSH 0.1.0-rc.8；支持 Windows、Node.js 24.9 以上、DeepSeek Harness 0.2.2-rc.1。普通用户直接按 [安装说明](INSTALL.md) 使用 Release 的 tgz。
 
 ## 构建
 
@@ -16,7 +18,7 @@ npm pack --pack-destination dist
 
 构建会生成 Host、React Client、官方 Remote 编解码器和本地字体资源。默认关闭开发预览。仓库保留与已验证安装包一致的 `lib/`，便于核对分发内容；自己构建的包需要在自己的独立 Harness 配置环境重新验证。
 
-Release 的 tgz 保持桌面实测时的原始字节。公开仓库补充了下载链接、构建与测试说明及测试工具入口，因此从源码重新打包的整包校验值不与 Release 的历史校验值相同。
+本次公开 tgz 保留本地 rc.8 已实测的运行文件与插件声明，只更新公开下载和使用说明。公开源码的构建与测试入口另保留可移植配置；从源码重新打包的整包校验值不要求与 Release 相同。对应关系见 verification/source-publication-check.json。
 
 ## 运行测试
 
@@ -31,7 +33,7 @@ npm test
 
 测试素材由脚本在 `fixtures/workspace/` 生成，是两个 40 秒纯色静音视频；已有同名文件不会被覆盖。测试记录写入仓库内的 `fixtures/contracts/`。这些目录不进入 Git 或安装包。
 
-默认运行 27 项检查，跳过一项需要真实中文识别工具的检查。要运行全部 28 项，还需在同一终端指定本机 whisper.cpp CPU 程序和多语种模型，再执行 `npm test`：
+默认通过 29 项检查，跳过一项需要真实中文识别工具的检查。要运行全部 30 项，还需在同一终端指定本机 whisper.cpp CPU 程序和多语种模型，再执行 `npm test`：
 
 ```powershell
 $env:MR_TEST_WHISPER='C:/Tools/whisper/whisper-cli.exe'

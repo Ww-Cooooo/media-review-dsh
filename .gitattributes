@@ -4,6 +4,7 @@
 *.ts text eol=lf
 *.jsx text eol=lf
 *.json text eol=lf
+*.map text eol=lf
 *.md text eol=lf
 *.yml text eol=lf
 *.wav binary

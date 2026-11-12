@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "errors": [],
+  "checks": [
+    "Actual Desktop: final package loaded; fixed composer entry; real 680/480/680 px handle drag; 92 px waveform; no overflow; same media/time/notes; close/reopen restores the work",
+    "Official isolated Web Client: final package loaded; fixed composer entry; real 680/480/680 px handle drag; 92 px waveform; no overflow; same media/time/notes; close/reopen restores the work",
+    "Normal Desktop cold start without debugging flags: fixed review button visible, sidebar stayed closed and configured model retained (native accessibility readback)."
+  ],
+  "newModelRun": false,
+  "packageSha256": "cd6503f56bf958db2a403d03de34aa77520ac048f32a3b371eb0d18c4fafdb15",
+  "runtimeFilesIdenticalToTestedCandidate": 122,
+  "installedFilesMatchedInEachEnvironment": 265,
+  "modelSelectionRetained": true,
+  "packageSmokePassed": true,
+  "normalStartup": {
+    "normalColdStart": true,
+    "conversationButtonVisible": true,
+    "reviewStayedClosed": true,
+    "modelSelectionRetained": true,
+    "debugPortClosed": true,
+    "gracefulExitViaApplicationMenu": true
+  }
+}

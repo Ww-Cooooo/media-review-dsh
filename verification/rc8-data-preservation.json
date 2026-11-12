@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "preexistingFilesByteIdentical": 202,
+  "historicalTestTaskHeadersOnlyViewedTimestampsChanged": 1,
+  "preexistingIndexRecordsPreserved": {
+    "bindings": 21,
+    "rounds": 8,
+    "draftExtras": 15,
+    "preferences": 21
+  },
+  "originalUnsavedDraftsByteIdentical": 4,
+  "historicalTestPlaybackPositionsRestored": 0,
+  "originalLocalPlaybackPreferencesRetained": 2,
+  "otherPluginDependenciesUnchanged": true,
+  "scope": "Only named rc.8 verification records added; old task contents, opinions, frames and rounds preserved."
+}

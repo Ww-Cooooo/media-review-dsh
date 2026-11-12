@@ -77,6 +77,7 @@ export class MediaReviewService {
   });}
   @Remote async probe(request:T.ProbeRequest):Promise<T.ProbeReceipt>{return {...request,accepted:true};}
   @Remote async board(query:T.BoardQuery):Promise<T.Board>{return this.run(()=>this.store.board(query));}
+  @Remote async conversation(query:T.ConversationQuery):Promise<T.ConversationReview>{return this.run(()=>this.store.conversation(query));}
   @Remote async browse(query:T.BrowseRequest):Promise<T.BrowseResult>{return this.run(()=>this.store.browse(query));}
   @Remote async register(request:T.Registration,signal:AbortSignal):Promise<T.MediaTask>{return this.run(async()=>{const task=await this.store.register(request,null,AbortSignal.any([signal,this.lifetime.signal]));await this.inspections.request({workspaceId:request.workspaceId,taskId:task.id,action:'start'}).catch(()=>{});return task;});}
   @Remote async save(request:T.DraftRequest):Promise<T.SaveReceipt>{return this.run(()=>this.store.save(request));}

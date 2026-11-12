@@ -1,0 +1,8 @@
+{
+  "normalColdStart": true,
+  "conversationButtonVisible": true,
+  "reviewStayedClosed": true,
+  "modelSelectionRetained": true,
+  "debugPortClosed": true,
+  "gracefulExitViaApplicationMenu": true
+}

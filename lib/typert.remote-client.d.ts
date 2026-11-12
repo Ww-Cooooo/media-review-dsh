@@ -4,7 +4,7 @@ import type {
   TypertRemoteInfo,
   TypertRemoteMethod,
 } from '@deepseek-ai/dsh-typert-protocol'
-import type { Activities, ActivityQuery, AnalysisRequest, AnalysisResult, Board, BoardQuery, BrowseRequest, BrowseResult, CancellationRequest, CarryReceipt, CarryRequest, CheckQuery, CheckReports, Configuration, ConfigurationRequest, ConnectionReceipt, DraftRequest, EditorReceipt, EditorRequest, ExportReceipt, ExportRequest, FreezeRequest, HandoffReceipt, InspectionRequest, InspectionResult, Locations, LocationsRequest, ManualProgressRequest, MappingRequest, MediaTask, OrganizeRequest, PlaybackRequest, PreparationRequest, PreparationResult, ProbeReceipt, ProbeRequest, Readiness, Recorded, RecoveryReceipt, RecoveryRequest, Reference, ReferenceRequest, Registration, RelinkRequest, Round, RoundRequest, Saved, SaveReceipt, UserReviewRequest } from 'media-review-dsh/types'
+import type { Activities, ActivityQuery, AnalysisRequest, AnalysisResult, Board, BoardQuery, BrowseRequest, BrowseResult, CancellationRequest, CarryReceipt, CarryRequest, CheckQuery, CheckReports, Configuration, ConfigurationRequest, ConnectionReceipt, ConversationQuery, ConversationReview, DraftRequest, EditorReceipt, EditorRequest, ExportReceipt, ExportRequest, FreezeRequest, HandoffReceipt, InspectionRequest, InspectionResult, Locations, LocationsRequest, ManualProgressRequest, MappingRequest, MediaTask, OrganizeRequest, PlaybackRequest, PreparationRequest, PreparationResult, ProbeReceipt, ProbeRequest, Readiness, Recorded, RecoveryReceipt, RecoveryRequest, Reference, ReferenceRequest, Registration, RelinkRequest, Round, RoundRequest, Saved, SaveReceipt, UserReviewRequest } from 'media-review-dsh/types'
 
 declare module '@deepseek-ai/dsh-typert-protocol' {
   interface TypertRemoteNamespace$6568334d65646961526576696577 {
@@ -17,6 +17,7 @@ declare module '@deepseek-ai/dsh-typert-protocol' {
     checks: (request: CheckQuery) => Promise<RemoteResult<CheckReports>>
     configuration: () => Promise<RemoteResult<Configuration>>
     configure: (request: ConfigurationRequest) => Promise<RemoteResult<Saved>>
+    conversation: (query: ConversationQuery) => Promise<RemoteResult<ConversationReview>>
     editor: (request: EditorRequest) => Promise<RemoteResult<EditorReceipt>>
     exportBundle: (request: ExportRequest) => Promise<RemoteResult<ExportReceipt>>
     freeze: (request: FreezeRequest) => Promise<RemoteResult<Round>>
@@ -49,6 +50,7 @@ declare module '@deepseek-ai/dsh-typert-protocol' {
     'eh3MediaReview/checks': (request: CheckQuery) => Promise<RemoteResult<CheckReports>>
     'eh3MediaReview/configuration': () => Promise<RemoteResult<Configuration>>
     'eh3MediaReview/configure': (request: ConfigurationRequest) => Promise<RemoteResult<Saved>>
+    'eh3MediaReview/conversation': (query: ConversationQuery) => Promise<RemoteResult<ConversationReview>>
     'eh3MediaReview/editor': (request: EditorRequest) => Promise<RemoteResult<EditorReceipt>>
     'eh3MediaReview/exportBundle': (request: ExportRequest) => Promise<RemoteResult<ExportReceipt>>
     'eh3MediaReview/freeze': (request: FreezeRequest) => Promise<RemoteResult<Round>>
@@ -86,6 +88,7 @@ export declare const TYPERT_REMOTE: TypertRemoteInfo<{
   readonly 'eh3MediaReview/checks': TypertRemoteMethod<{ readonly 'request': CheckQuery }, CheckReports>
   readonly 'eh3MediaReview/configuration': TypertRemoteMethod<{  }, Configuration>
   readonly 'eh3MediaReview/configure': TypertRemoteMethod<{ readonly 'request': ConfigurationRequest }, Saved>
+  readonly 'eh3MediaReview/conversation': TypertRemoteMethod<{ readonly 'query': ConversationQuery }, ConversationReview>
   readonly 'eh3MediaReview/editor': TypertRemoteMethod<{ readonly 'request': EditorRequest }, EditorReceipt>
   readonly 'eh3MediaReview/exportBundle': TypertRemoteMethod<{ readonly 'request': ExportRequest }, ExportReceipt>
   readonly 'eh3MediaReview/freeze': TypertRemoteMethod<{ readonly 'request': FreezeRequest }, Round>

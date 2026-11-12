@@ -312,6 +312,24 @@ export class ReviewStore {
     entries.sort((a,b)=>Number(b.directory)-Number(a.directory)||a.name.localeCompare(b.name,'zh-CN'));
     return {directory:folder,parent:folder===root?null:path.dirname(folder),entries,limited};
   }
+  async conversation({sessionId}) {
+    this.assertHealthy();
+    sessionId=string(sessionId,255);
+    if(!sessionId)fail('请选择制作会话','target_invalid',400);
+    const targets=await this.host.targets(),workspace=targets.find(w=>w.sessions.some(s=>s.id===sessionId));
+    if(!workspace)return {sessionId,workspaceId:'',cursor:'',entries:[]};
+    // Registration insertion order is durable. Renaming/opening/archiving must
+    // never look like a newly delivered version and reopen a dismissed review.
+    const ids=Object.keys(this.state.bindings).filter(id=>{
+      const b=this.state.bindings[id];return b.sessionId===sessionId&&b.workspaceId===workspace.id&&b.workspaceRoot===path.resolve(workspace.path)&&this.tasks.headers.has(id);
+    });
+    const entries=ids.map(id=>{
+      const b=this.state.bindings[id],task=this.tasks.headers.get(id),round=b.roundId?this.state.rounds[b.roundId]:null;
+      const review=round?.targetTaskId===id&&round.sessionId===sessionId?round:null;
+      return {id,title:task.title,workspaceId:workspace.id,taskId:review?.taskId||id,viewTaskId:id,roundId:review?.id||null};
+    });
+    return {sessionId,workspaceId:workspace.id,cursor:ids.at(-1)||'',entries};
+  }
   async board(query) {
     this.assertHealthy();
     const targets=await this.host.targets();

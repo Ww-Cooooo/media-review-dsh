@@ -1,0 +1,44 @@
+{
+  "version": "0.1.0-rc.8",
+  "carrier": "Officially installed isolated Harness Web Client",
+  "actualUi": true,
+  "croppedToEntryAndSidebar": true,
+  "newModelRun": false,
+  "errors": [],
+  "installedFilesMatched": 265,
+  "packageSha256": "72484ddb9f482efbb7c281c208459c7f45866231ca92e641e33b6d055eb750b6",
+  "savedNotes": 2,
+  "rangeMs": [
+    6000,
+    8500
+  ],
+  "waveformHeight": 92,
+  "wheelZoom": 1.9738777322304477,
+  "rangePlaybackAdvanced": true,
+  "notesUnchangedAfterResize": true,
+  "sidebarWidths": [
+    920,
+    680
+  ],
+  "closeReopenRetained": true,
+  "triggerFixedAboveComposer": true,
+  "passed": true,
+  "screenshots": [
+    {
+      "file": "frame-annotations.png",
+      "sha256": "510724f5af226e398f0207d8056d94ed1011724f0247d3d6c91e10d6a46d9ad1"
+    },
+    {
+      "file": "sidebar-entry.png",
+      "sha256": "b21841094be557ffd645b18fc31f66998b1544843a9e96fea41fa9b0ae4613c3"
+    },
+    {
+      "file": "sidebar-narrow.png",
+      "sha256": "2b5d1974f0d5bc11fad104d58dfd2574a9a4c1c0e0e1c2bc609740da5e96ee91"
+    },
+    {
+      "file": "waveform-range.png",
+      "sha256": "ca9b0c9276ade17880d98aebc71f63ea3ae9f69aae6d8f4556cfaba290f0bc36"
+    }
+  ]
+}

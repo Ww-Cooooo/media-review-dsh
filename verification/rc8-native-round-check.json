@@ -1,0 +1,13 @@
+{
+  "nativeDesktop": true,
+  "newModelRun": false,
+  "historicalModelVersion": "rc.7",
+  "checks": [
+    "Newly annotated review exported as an intact ZIP with HTML, Markdown, JSON, numbered SVG and reference image",
+    "Actual rc.7 model-returned V2 remains paired with frozen opinions; wide parallel and narrow stacked comparison works, completed decisions unchanged",
+    "Closing and reopening the sidebar retains the completed returned version and round"
+  ],
+  "errors": [],
+  "exportEntries": 6,
+  "passed": true
+}

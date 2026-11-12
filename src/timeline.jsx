@@ -9,12 +9,28 @@ function WavePlot({peaks,start,end,duration,height}){
   const host=React.useRef(null),{token}=theme.useToken(),[failed,setFailed]=React.useState(false);
   const values=React.useMemo(()=>proportionalWaveform(peaks,start,end,duration,height),[peaks,start,end,duration,height]);
   React.useEffect(()=>{
-    let chart,dead=false;const node=host.current;setFailed(false);
-    const observer=new ResizeObserver(()=>{if(chart||!node.clientWidth||!node.clientHeight||!values.length)return;chart=new Chart({container:node,autoFit:true,height:node.clientHeight});
-      const fill=parseInt(token.colorBgContainer.replace('#','').slice(0,2),16)<128?'#66d5bb':token.colorPrimary;
-      chart.options({type:'interval',data:values,animate:false,padding:0,margin:0,inset:0,encode:{x:'i',y:'upper',y1:'lower'},scale:{x:{paddingInner:.25,paddingOuter:0},y:{domain:[-1.1,1.1],nice:false}},axis:false,legend:false,interaction:{tooltip:false},style:{fill,lineWidth:0,radius:0}});
-      chart.render().catch(()=>{if(!dead)setFailed(true);});});observer.observe(node);
-    return()=>{dead=true;observer.disconnect();chart?.destroy();};
+    let chart,dead=false,busy=false,frame=0,lastWidth=0,lastHeight=0;const node=host.current;setFailed(false);
+    // G2 autoFit observes the window, while the host resizes this container alone.
+    // Coalesce pointer frames and serialize renders; always finish at the latest size.
+    const resize=()=>{
+      if(dead||busy||frame)return;
+      frame=requestAnimationFrame(()=>{
+        frame=0;const width=node.clientWidth,height=node.clientHeight;
+        if(dead||!width||!height||!values.length||(width===lastWidth&&height===lastHeight))return;
+        lastWidth=width;lastHeight=height;busy=true;
+        let result;
+        if(chart)result=chart.changeSize(width,height);
+        else{
+          chart=new Chart({container:node,autoFit:false,width,height});
+          const fill=parseInt(token.colorBgContainer.replace('#','').slice(0,2),16)<128?'#66d5bb':token.colorPrimary;
+          chart.options({type:'interval',data:values,animate:false,padding:0,margin:0,inset:0,encode:{x:'i',y:'upper',y1:'lower'},scale:{x:{paddingInner:.25,paddingOuter:0},y:{domain:[-1.1,1.1],nice:false}},axis:false,legend:false,interaction:{tooltip:false},style:{fill,lineWidth:0,radius:0}});
+          result=chart.render();
+        }
+        result.catch(()=>{if(!dead)setFailed(true);}).finally(()=>{busy=false;resize();});
+      });
+    };
+    const observer=new ResizeObserver(resize);observer.observe(node);
+    return()=>{dead=true;observer.disconnect();cancelAnimationFrame(frame);chart?.destroy();};
   },[values,token.colorPrimary,token.colorBgContainer]);
   return <div className="mr-wave-plot" aria-hidden="true"><div ref={host}/>{failed&&<svg viewBox={`0 0 ${Math.max(1,values.length)*4} 100`} preserveAspectRatio="none">{values.map((v,i)=><rect key={i} x={i*4} y={50-v.upper*45} width="3" height={v.upper*90} fill="currentColor"/>)}</svg>}</div>;
 }

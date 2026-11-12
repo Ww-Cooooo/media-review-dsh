@@ -24,6 +24,9 @@ export interface Playback {timeMs:number;volume:number;rate:number}
 export interface Completion {outcome:'no-changes'|'with-notes';completedAt:string}
 export interface Board { targets:Target[];tasks:MediaTask[];draft:{notes:Note[];revision:string;completion?:Completion|null}|null;rounds:Round[];items:{note:Note;latest:ProgressEvent|null;history:ProgressEvent[]}[];preferences:Playback|null;nextRoundNumber:number }
 export interface BoardQuery {workspaceId:string;taskId?:string;roundId?:string}
+export interface ConversationQuery {sessionId:string}
+export interface ConversationEntry {id:string;title:string;workspaceId:string;taskId:string;viewTaskId:string;roundId:string|null}
+export interface ConversationReview {sessionId:string;workspaceId:string;cursor:string;entries:ConversationEntry[]}
 export interface Registration {operationId:string;workspaceId:string;sessionId:string;source:string;title:string;allowedRoot?:string;previousTaskId?:string|null;roundId?:string|null;mappings?:Mapping[];manualReview?:boolean;manualMetadata?:ManualMetadata}
 export interface DraftRequest {operationId:string;workspaceId:string;taskId:string;expectedRevision:string;notes:Note[];noChanges?:boolean;clientId?:string}
 export interface SaveReceipt {revision:string;savedAt:string}

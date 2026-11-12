@@ -1,12 +1,14 @@
 # 插件发布与作者支持计划
 
-核查日期：2026-11-11。本项目由社区独立开发维护，非 DeepSeek 官方插件。
+**在其他 Agent 中审片：**[下载 Media Review Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11)（Windows，Agent 需能访问本机文件并执行命令）。
+
+规则核查日期：2026-11-11；分发信息更新：2026-11-12。本项目由社区独立开发维护，非 DeepSeek 官方插件。
 
 ## 目前怎样发布 DSH 插件
 
 官方采用带 `dsh.bundle` 声明及配置 patch 的组合包。分发可以使用 npm、Git 仓库或预构建 tgz，**没有必须放在 GitHub 开源的统一要求**。Media Review DSH 使用独立 GitHub 仓库和 Release，主要安装入口是经过实测的 tgz；源码、使用说明和许可一并公开。[已读原文：[官方打包与安装文档](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/develop/basic/publish.zh.md)]
 
-本项目的发布材料包括源码、`lib/` 构建产物、官方组合包清单、tgz、使用说明、校验值、许可及实测摘要。发布版本为 `v0.1.0-rc.6`，仍标记为预发布版；实测兼容范围是 Windows / DeepSeek Harness 0.2.2-rc.1。桌面安装步骤见 [INSTALL.md](INSTALL.md)。
+本项目的发布材料包括源码、`lib/` 构建产物、官方组合包清单、tgz、使用说明、校验值、许可及实测摘要。发布版本为 `v0.1.0-rc.8`，仍标记为预发布版；实测兼容范围是 Windows / DeepSeek Harness 0.2.2-rc.1。桌面安装步骤见 [INSTALL.md](INSTALL.md)。
 
 官网的“社区插件”入口指向 GitHub 的 `dsh-plugin` 话题。仓库添加该话题可用于社区发现；这不等于进入官方审核名单。[已读原文：[DSH 官网](https://www.deepseek.com/zh/harness/)]
 
@@ -46,7 +48,7 @@
 作品链接：
 
 - 仓库：https://github.com/Ww-Cooooo/media-review-dsh
-- 安装包与说明：https://github.com/Ww-Cooooo/media-review-dsh/releases/tag/v0.1.0-rc.6
+- 安装包与说明：https://github.com/Ww-Cooooo/media-review-dsh/releases/tag/v0.1.0-rc.8
 - 实测结果：https://github.com/Ww-Cooooo/media-review-dsh/blob/main/FINAL-VERIFICATION.md
 
 提交时打开官方表单，填写必填项、核对作品链接与联系邮箱，再点提交并保留实际成功回执。发布 GitHub 不会自动提交这张表。
