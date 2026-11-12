@@ -1,6 +1,12 @@
 # Media Review DSH · 侧栏版实拍
 
-**Media Review DSH 是基于 [Media Review Skill](https://github.com/Ww-Cooooo/media-review) 改造的 DeepSeek Harness 原生插件。** 在其他 Agent 中审片，可[下载原版 Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11)（Windows，需支持本机文件访问与命令执行）。
+**Media Review DSH 是基于 [Media Review Skill](https://github.com/Ww-Cooooo/media-review) 改造的 DeepSeek Harness 原生插件。** 如果想在其他 Agent 中使用，可前往[原版 Skill 的 GitHub 仓库](https://github.com/Ww-Cooooo/media-review)下载和安装（Windows，需支持本机文件访问与命令执行）。
+
+Media Review 专门解决用 AI 做视频时改稿反馈麻烦的痛点。AI 生成或剪完视频并送审后，会自动展开审阅侧栏。像用剪映一样拖时间轴、选画面，直接留下修改意见，核心有三大实用功能：
+
+1. **直接框选画面改：** 不满意哪个区域直接在画面上圈出来，对着区域提修改要求，不用费劲描述“画面左上角、人物右侧”这类位置信息。
+2. **时间定位灵活选：** 既能选中一整段时间段落批量提问题，也能精准定格到某一个时间点单独调整，整段修改和细节修正都能满足。
+3. **字幕点击秒跳转：** 识别视频中的语音台词，或导入已有字幕；点哪句就直接跳到对应的画面，长视频找内容特别快。
 
 同一段有对白、停顿和中文字幕的影片，边看边留下修改意见。以下截图来自已安装的 **0.1.0-rc.8**，在 Windows / DeepSeek Harness 0.2.2-rc.1 独立环境中实际操作后，按入口或侧栏区域截取。
 

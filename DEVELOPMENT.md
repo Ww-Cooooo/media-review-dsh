@@ -1,6 +1,6 @@
 # 开发与测试
 
-**Media Review DSH 是基于 [Media Review Skill](https://github.com/Ww-Cooooo/media-review) 改造的 DeepSeek Harness 原生插件。** 在其他 Agent 中审片，可[下载原版 Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11)（Windows，需支持本机文件访问与命令执行）。
+**Media Review DSH 是基于 [Media Review Skill](https://github.com/Ww-Cooooo/media-review) 改造的 DeepSeek Harness 原生插件。** 如果想在其他 Agent 中使用，可前往[原版 Skill 的 GitHub 仓库](https://github.com/Ww-Cooooo/media-review)下载和安装（Windows，需支持本机文件访问与命令执行）。
 
 源码对应 Media Review DSH 0.1.0-rc.8；支持 Windows、Node.js 24.9 以上、DeepSeek Harness 0.2.2-rc.1。普通用户直接按 [安装说明](INSTALL.md) 使用 Release 的 tgz。
 
