@@ -1,6 +1,6 @@
 # 插件发布与作者支持计划
 
-**在其他 Agent 中审片：**[下载 Media Review Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11)（Windows，Agent 需能访问本机文件并执行命令）。
+**Media Review DSH 是基于 [Media Review Skill](https://github.com/Ww-Cooooo/media-review) 改造的 DeepSeek Harness 原生插件。** 在其他 Agent 中审片，可[下载原版 Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11)（Windows，需支持本机文件访问与命令执行）。
 
 规则核查日期：2026-11-11；分发信息更新：2026-11-12。本项目由社区独立开发维护，非 DeepSeek 官方插件。
 

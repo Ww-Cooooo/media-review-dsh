@@ -1,6 +1,6 @@
 # Media Review DSH · 侧栏版实拍
 
-**在其他 Agent 中审片：**[下载 Media Review Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11)（Windows，Agent 需能访问本机文件并执行命令）。
+**Media Review DSH 是基于 [Media Review Skill](https://github.com/Ww-Cooooo/media-review) 改造的 DeepSeek Harness 原生插件。** 在其他 Agent 中审片，可[下载原版 Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11)（Windows，需支持本机文件访问与命令执行）。
 
 同一段有对白、停顿和中文字幕的影片，边看边留下修改意见。以下截图来自已安装的 **0.1.0-rc.8**，在 Windows / DeepSeek Harness 0.2.2-rc.1 独立环境中实际操作后，按入口或侧栏区域截取。
 
