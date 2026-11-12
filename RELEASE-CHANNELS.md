@@ -74,3 +74,20 @@
 ## 本次维护记录
 
 2026-11-12：对照公开仓库、Release、作者投稿及展示记录建立本清单，并从 README 提供入口。本次仅维护文档；未新增功能版本、重打包、覆盖附件、重复投稿或提交支持表。
+
+### 2026-11-12：社区投稿检查已通过，等待维护者处理
+
+[PR #14133](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/14133) 当前提交为 `67cc8e35f88aaa5bc3d84a049246c33d39123011`，状态为 **OPEN / MERGEABLE / clean**；尚未合并，上游主分支尚无本条目。
+
+| 检查 | 最新结果 | 完成时间（北京时间） | 证据 |
+| --- | --- | --- | --- |
+| PR check / check | SUCCESS | 2026-11-12 21:31:16 | [运行与步骤日志](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/actions/runs/43223380124/job/131200430531) |
+| Submission gate | SUCCESS | 2026-11-12 21:31:57 | [门禁结果](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/runs/131216752896) |
+
+门禁明确确认本条目通过，仓库年龄已不构成阻碍。`check` 的两条 annotations 是 Actions 的 Node 运行版本升级提醒和 Ubuntu runner 迁移通知；门禁本身没有 annotations，均不存在针对本插件的失败项。经典 commit-status 接口的空状态列表不代表 Checks API 仍有检查待完成。
+
+本次核查没有维护者评论、修改请求或 `held: author` 标签。目录仍只增加本项目的一个 YAML 文件，本地条目校验通过；固定 rc.8 安装包匿名访问返回 HTTP 200。未发现需要作者修复的投稿问题，没有制造提交重触发市场检查，也未重打包。
+
+**下一步由维护者审核并决定是否合并。** 依[上游贡献指南](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md)，检查通过只是前置条件，不能宣称已经收录或已进入客户端市场。合并后再核对主分支条目、生成目录和安装来源。
+
+本项目当前门禁已通过，无需等待旧年龄失败的自动复查。若以后核查历史失败，应以最新 head 的结果为准，并查看[上游复查流程](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/.github/workflows/regate.yml)，不以旧邮件或工作流主分支名称判断当前投稿状态。本次仅更新本渠道清单；安装版本仍为 rc.8。
