@@ -1,5 +1,7 @@
 # 插件发布与作者支持计划
 
+实际发布入口、社区投稿状态和后续更新步骤集中在 [发布渠道与同步维护](RELEASE-CHANNELS.md)。本页保留规则调查与支持登记说明；其中历史状态需按核查日期阅读。
+
 **Media Review DSH 是基于 [Media Review Skill](https://github.com/Ww-Cooooo/media-review) 改造的 DeepSeek Harness 原生插件。** 如果想在其他 Agent 中使用，可前往[原版 Skill 的 GitHub 仓库](https://github.com/Ww-Cooooo/media-review)下载和安装（Windows，需支持本机文件访问与命令执行）。
 
 规则核查日期：2026-11-11；分发信息更新：2026-11-12。本项目由社区独立开发维护，非 DeepSeek 官方插件。
